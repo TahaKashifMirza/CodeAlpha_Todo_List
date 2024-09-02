@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Todo List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <p class="paragraph">Welcome to the To-Do List, your personal productivity companion designed to help you stay organized and on top of your tasks. With a clean, modern interface, adding new tasks is as simple as typing and clicking the <strong>ADD TASK</strong> button. You can easily update or delete tasks with a single click, keeping your list current and manageable.</p>
+        <input type="text" id="taskInput" placeholder="Enter your task...">
+        <button onclick="addTask()"><strong>ADD TASK</strong></button>
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="taskBody">   
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Style -->
+    <footer>
+        <p><strong>CodeAlpha - Todo List | Created By Taha Kashif Mirza</strong></p>
+    </footer>
+
+    <script src="Script/script.js"></script>
+</body>
+</html>
